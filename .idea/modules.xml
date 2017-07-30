@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/db-roundhouse-kick.iml" filepath="$PROJECT_DIR$/db-roundhouse-kick.iml" />
+      <module fileurl="file://$PROJECT_DIR$/roundhouse-kick-db.iml" filepath="$PROJECT_DIR$/roundhouse-kick-db.iml" />
     </modules>
   </component>
 </project>
