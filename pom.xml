@@ -8,8 +8,8 @@
         <version>1.5.2.RELEASE</version>
     </parent>
 
-    <artifactId>database-roundhouse-kick</artifactId>
-    <name>Database Roundhouse Kick</name>
+    <artifactId>roundhouse-kick-db</artifactId>
+    <name>Roundhouse Kick DB</name>
     <description>Database Unit Testing Made Simple</description>
     <url>http://jamesbyars.com</url>
 

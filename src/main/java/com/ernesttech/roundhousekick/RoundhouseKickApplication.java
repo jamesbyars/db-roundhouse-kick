@@ -6,10 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @EnableAutoConfiguration
-public class DatabaseRoundhouseKickApplication {
+public class RoundhouseKickApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DatabaseRoundhouseKickApplication.class, args);
+        SpringApplication.run(RoundhouseKickApplication.class, args);
     }
 
 }
