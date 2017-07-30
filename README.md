@@ -24,5 +24,7 @@ interwebs I haven't been able to find a simple, comprehensive DB TDD
 solution.  So I took a list of problems I've observed over my career 
 and wrote a simple tool to enable such testing.
 
+# Custom Training
 
+Contact me directly at james@ernesttech.com for more information.
 
