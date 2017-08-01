@@ -12,6 +12,7 @@
     <name>Roundhouse Kick DB</name>
     <description>Database Unit Testing Made Simple</description>
     <url>http://jamesbyars.com</url>
+    <version>0.0.1.REALEASE</version>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -93,19 +94,9 @@
         <dependency>
             <groupId>com.github.sbrannen</groupId>
             <artifactId>spring-test-junit5</artifactId>
-            <version>${org.junit.platform.version}</version>
+            <version>1.0.0.M6</version>
             <scope>test</scope>
         </dependency>
-
-
-        <!-- JUnit5 -->
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>${org.junit.jupiter.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <!-- /JUnit5 -->
 
         <!-- Only required to run tests in an IntelliJ IDEA that bundles an older version -->
         <dependency>
@@ -132,6 +123,24 @@
             <artifactId>junit-jupiter-api</artifactId>
             <version>${org.junit.jupiter.version}</version>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-surefire-provider</artifactId>
+            <version>${org.junit.platform.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-report-plugin</artifactId>
+            <version>2.19.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jxr-plugin</artifactId>
+            <version>2.1</version>
         </dependency>
 
     </dependencies>
@@ -214,26 +223,22 @@
             </plugin>
             <!-- /Liquibase Plugin -->
 
-
-            <!-- Surefire Reports -->
-            <plugin>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.19.1</version>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.junit.platform</groupId>
-                        <artifactId>junit-platform-surefire-provider</artifactId>
-                        <version>${org.junit.platform.version}</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>org.junit.jupiter</groupId>
-                        <artifactId>junit-jupiter-engine</artifactId>
-                        <version>${org.junit.jupiter.version}</version>
-                    </dependency>
-                </dependencies>
-            </plugin>
-            <!-- /Surefire Reports -->
-
         </plugins>
     </build>
+
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-report-plugin</artifactId>
+                <version>2.19.1</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jxr-plugin</artifactId>
+                <version>2.1</version>
+            </plugin>
+        </plugins>
+    </reporting>
+
 </project>
