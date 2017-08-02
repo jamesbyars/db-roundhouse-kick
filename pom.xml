@@ -90,7 +90,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Include SprintExtension for Sprint Dependency resolution -->
+        <!-- Include SpringExtension for Spring Dependency resolution -->
         <dependency>
             <groupId>com.github.sbrannen</groupId>
             <artifactId>spring-test-junit5</artifactId>
@@ -192,7 +192,7 @@
                             <inputSchema>public</inputSchema>
                         </database>
                         <target>
-                            <packageName>com.ernesttech.example.dbtdd.domain.jooq.generated</packageName>
+                            <packageName>com.ernesttech.roundhousekick.domain.jooq.generated</packageName>
                             <directory>src/main/java</directory>
                         </target>
                     </generator>
@@ -223,11 +223,7 @@
             </plugin>
             <!-- /Liquibase Plugin -->
 
-        </plugins>
-    </build>
 
-    <reporting>
-        <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-report-plugin</artifactId>
@@ -238,7 +234,8 @@
                 <artifactId>maven-jxr-plugin</artifactId>
                 <version>2.1</version>
             </plugin>
+
         </plugins>
-    </reporting>
+    </build>
 
 </project>
