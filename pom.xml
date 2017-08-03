@@ -12,7 +12,7 @@
     <name>Roundhouse Kick DB</name>
     <description>Database Unit Testing Made Simple</description>
     <url>http://jamesbyars.com</url>
-    <version>0.0.1.REALEASE</version>
+    <version>0.1.RELEASE</version>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -231,7 +231,7 @@
                 <version>2.19.1</version>
                 <executions>
                     <execution>
-                        <phase>post-integration-test</phase>
+                        <phase>site</phase>
                         <goals>
                             <goal>report</goal>
                         </goals>
@@ -243,7 +243,6 @@
                 <artifactId>maven-jxr-plugin</artifactId>
                 <version>2.1</version>
             </plugin>
-
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.19.1</version>
