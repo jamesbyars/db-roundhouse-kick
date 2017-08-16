@@ -17,5 +17,11 @@
             <column name="test_set" type="text"/>
         </createTable>
     </changeSet>
+
+    <changeSet id="add-compare-type-column" author="jbyars">
+        <addColumn tableName="tests">
+            <column name="comparison-type" type="text" defaultValue="String"/>
+        </addColumn>
+    </changeSet>
     
 </databaseChangeLog>

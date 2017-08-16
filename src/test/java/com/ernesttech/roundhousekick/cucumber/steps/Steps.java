@@ -8,11 +8,9 @@ import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import org.jooq.Record;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import java.util.ArrayList;
 import java.util.Collections;
 
 import static org.mockito.Matchers.anyString;
@@ -42,7 +40,6 @@ public class Steps {
 
         when(queryExecutionManager.executeQuery(anyString()))
                 .thenReturn(null);
-
 
 
     }
